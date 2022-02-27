@@ -17,5 +17,11 @@ export default class CalcDisplay extends React.Component {
 
 const styles = StyleSheet.create({
   container: {},
-  display: { fontSize: 70, color: "black", textAlign: "right", padding:20, fontWeight: "200", },
+  display: {
+    fontSize: 70,
+    color: "black",
+    textAlign: "right",
+    padding: 20,
+    fontWeight: "200",
+  },
 });

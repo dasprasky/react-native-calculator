@@ -26,10 +26,10 @@ export default class CalculatorScreen extends React.Component {
           </LinearGradient>
         </View>
 
-        <View style = {styles.buttonParentBackground}>
+        <View style={styles.buttonParentBackground}>
           <View style={styles.buttonRow}>
-            <CalcButton title="C" color="black"  backgroundColor="#F3F3F3"/>
-            <CalcButton title="+/-" color="black"  backgroundColor="#F3F3F3"/>
+            <CalcButton title="C" color="black" backgroundColor="#F3F3F3" />
+            <CalcButton title="+/-" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="%" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="/" />
           </View>
@@ -38,11 +38,11 @@ export default class CalculatorScreen extends React.Component {
             <CalcButton title="7" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="8" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="9" color="black" backgroundColor="#F3F3F3" />
-            <CalcButton title="x"  />
+            <CalcButton title="x" />
           </View>
 
           <View style={styles.buttonRow}>
-            <CalcButton title="4" color="black" backgroundColor="#F3F3F3"/>
+            <CalcButton title="4" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="5" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="6" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="-" />
@@ -56,10 +56,10 @@ export default class CalculatorScreen extends React.Component {
           </View>
 
           <View style={styles.buttonRow}>
-            <CalcButton title="." color="black" backgroundColor="#F3F3F3"/>
+            <CalcButton title="." color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="0" color="black" backgroundColor="#F3F3F3" />
             <CalcButton title="00" color="black" backgroundColor="#F3F3F3" />
-            <CalcButton title="=" backgroundColor="#BF3636"/>
+            <CalcButton title="=" backgroundColor="#BF3636" />
           </View>
         </View>
       </View>
@@ -70,15 +70,16 @@ export default class CalculatorScreen extends React.Component {
 const styles = StyleSheet.create({
   displayContainer: { flex: 1, justifyContent: "flex-end" },
   buttonRow: { flexDirection: "row", justifyContent: "space-between" },
-  container: { flex: 1, marginBottom:16 },
+  container: { flex: 1 },
   linearGradient: {
     flex: 1,
     paddingLeft: 15,
     paddingRight: 15,
     borderRadius: 5,
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
   buttonParentBackground: {
     backgroundColor: "#F3F3F3",
+    paddingBottom: 16,
   },
 });
